@@ -1,6 +1,6 @@
-window.addEventListener("load", init);
+window.addEventListener("load", cargarCarrito);
 
-function init() {
+function cargarCarrito() {
   const tablaBody = document.querySelector("table tbody");
   const precioTotalElement = document.querySelector(".precioTotalLibros");
   let carrito = JSON.parse(localStorage.getItem("cart")) || [];
