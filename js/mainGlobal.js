@@ -3,12 +3,11 @@ window.addEventListener("load", init);
 function init() {
 
   fetch('../pages/components/footer.html')
-  .then(res => res.text())
-  .then(data => {
-    console.log('Contenido footer:', data);
-    document.getElementById('componentFooter').innerHTML = data;
-  })
-  .catch(console.error);
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('componentFooter').innerHTML = data;
+    })
+    .catch(console.error);
 
 
   fetch("../pages/components/header.html")
@@ -17,6 +16,26 @@ function init() {
       const header = document.getElementById("componentHeader");
       if (header) {
         header.innerHTML = data;
+        const toggleButton = document.querySelector('.menu-toggle');
+        const navList = document.querySelector('.header__nav-list');
+
+        if (toggleButton && navList) {
+          toggleButton.addEventListener('click', () => {
+            navList.classList.toggle('open');
+          });
+
+          document.addEventListener('click', (e) => {
+            if (!navList.contains(e.target) && !toggleButton.contains(e.target)) {
+              navList.classList.remove('open');
+            }
+          });
+
+          window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+              navList.classList.remove('open');
+            }
+          });
+        }
 
         const inputHeader = document.querySelector(".busqueda_header .input_Search");
         if (inputHeader) {
@@ -67,10 +86,9 @@ function init() {
           addToCart(titulo, autor, imagen, precio);
         });
       });
-
-    });
+    })
+    .catch(console.error);
 }
-
 
 function addToCart(titulo, autor, imagen, precioUnitario) {
   let carrito = JSON.parse(localStorage.getItem("cart")) || [];

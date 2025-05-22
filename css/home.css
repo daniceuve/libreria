@@ -273,6 +273,30 @@
 
 }
 
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px;
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: none;
+    z-index: 9999;
+    transition: opacity 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  #scrollToTop svg {
+    width: 24px;
+    height: 24px;
+    fill: white;
+  }
+  
+  #scrollToTop:hover {
+    background-color: var(--hover-color);
+  }
 
 .anuncio{
     background-color: var(--bg-color-anuncio);
@@ -289,29 +313,6 @@
 
 /* Media Queries */
 @media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
-        .header_logo {
-            padding-left: 0;
-            margin-bottom: 10px;
-        }
-        .header__nav {
-            padding: 0;
-            margin-top: 10px;
-            .header__nav-list {
-                flex-direction: column;
-                align-items: flex-start;
-                a {
-                    padding: 10px 0;
-                }
-            }
-            .input_Search {
-                width: 100%;
-                margin-top: 10px;
-            }
-        }
-    }
     .bestSellers_books {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -321,29 +322,6 @@
 }
 
 @media (max-width: 480px) {
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
-        .header_logo {
-            padding-left: 0;
-            margin-bottom: 10px;
-        }
-        .header__nav {
-            padding: 0;
-            margin-top: 10px;
-            .header__nav-list {
-                flex-direction: column;
-                align-items: flex-start;
-                a {
-                    padding: 10px 0;
-                }
-            }
-            .input_Search {
-                width: 100%;
-                margin-top: 10px;
-            }
-        }
-    }
     .bestSellers_books {
         grid-template-columns: 1fr;
     }
@@ -351,18 +329,3 @@
         grid-template-columns: 1fr;
     }
 }
-/*
-// Modo oscuro
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: var(--fondo-oscuro);
-        color: #FFFAFA;
-    }
-    .background-rectangle2 {
-        background-color: rgba(40, 40, 40, 1);
-    }
-    .background-rectangle{
-        background-color: rgba(30, 30, 40, 1);
-    }
-}
-*/

@@ -1,4 +1,5 @@
-window.addEventListener("load", () => {
+window.addEventListener("load", init);
+function init() {
     const inputBusqueda = document.querySelector(".busqueda .input_Search");
     const priceRange = document.getElementById("priceRange");
     const priceText = document.getElementById("priceText");
@@ -127,5 +128,5 @@ window.addEventListener("load", () => {
     btnLimpiar.addEventListener("click", limpiarFiltros);
   
     filtrarLibros();
-  });
+}
   
