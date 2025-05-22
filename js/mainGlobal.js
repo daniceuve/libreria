@@ -2,7 +2,7 @@ window.addEventListener("load", init);
 
 function init() {
 
-  fetch('../pages/components/footer.html')
+  fetch('components/footer.html')
   .then(res => res.text())
   .then(data => {
     console.log('Contenido footer:', data);
@@ -11,7 +11,7 @@ function init() {
   .catch(console.error);
 
 
-  fetch("../pages/components/header.html")
+  fetch("components/header.html")
     .then(res => res.text())
     .then(data => {
       const header = document.getElementById("componentHeader");
@@ -26,7 +26,7 @@ function init() {
               e.preventDefault();
               const query = inputHeader.value.trim();
               if (query.length > 0) {
-                const url = new URL(window.location.origin + "/pages/search.html");
+                const url = new URL(window.location.origin + "/search.html");
                 url.searchParams.set("q", query);
                 window.location.href = url.toString();
               }
