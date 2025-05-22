@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('load', () => {
     const button = document.getElementById('heroButton');
     const canvas = document.getElementById('circleCanvas');
     const ctx = canvas.getContext('2d');

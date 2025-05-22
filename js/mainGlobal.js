@@ -18,7 +18,6 @@ function init() {
       if (header) {
         header.innerHTML = data;
 
-        // Buscador
         const inputHeader = document.querySelector(".busqueda_header .input_Search");
         if (inputHeader) {
           inputHeader.addEventListener("keydown", (e) => {
@@ -34,7 +33,6 @@ function init() {
           });
         }
 
-        // Carrito
         const carritoContainer = document.querySelector(".carritoContainer");
         const cartPreview = carritoContainer?.querySelector(".cartPreview");
 
@@ -48,8 +46,6 @@ function init() {
             cartPreview.classList.remove("show");
           });
         }
-      } else {
-        console.warn("⚠️ No se encontró el div con id 'componentHeader'");
       }
 
       const botones = document.querySelectorAll(".botonAñadir");
@@ -60,20 +56,23 @@ function init() {
           const tituloElem = book.querySelector("h3");
           const autorElem = book.querySelector("p");
           const precioElem = book.querySelector(".precio");
+          const imagenElem = book.querySelector("img");
 
           const titulo = tituloElem.innerText;
           const autor = autorElem.innerText;
           const precioText = precioElem.innerText.replace("€", "").trim();
           const precio = parseFloat(precioText);
+          const imagen = imagenElem ? imagenElem.getAttribute("src") : "";
 
-          addToCart(titulo, autor, precio);
+          addToCart(titulo, autor, imagen, precio);
         });
       });
+
     });
 }
 
 
-function addToCart(titulo, autor, precioUnitario) {
+function addToCart(titulo, autor, imagen, precioUnitario) {
   let carrito = JSON.parse(localStorage.getItem("cart")) || [];
 
   const index = carrito.findIndex(item => item.titulo === titulo);
@@ -85,6 +84,7 @@ function addToCart(titulo, autor, precioUnitario) {
     carrito.push({
       titulo,
       autor,
+      imagen,
       precioUnitario,
       cantidad: 1,
       precioTotal: precioUnitario.toFixed(2),

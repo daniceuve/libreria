@@ -49,6 +49,14 @@
     }
   }
 
+  .eliminar {
+    cursor: pointer;
+    transition: fill 0.3s ease;
+    &:hover,
+    &:focus {
+      fill: var(--hover-color);
+    }
+  }
 
   .input-number-container {
     display: inline-flex;

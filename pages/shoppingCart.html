@@ -35,29 +35,28 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>
-                            <img src="../assets/imgs/paginaPrincipal/bestSellers/bestSeller_1_small.png" alt="Libro 1" />
-                            El Clan (Inspectora Elena Blanco 5)
+                        <td class="informacionLibro">
+                            
                         </td>
-                        <td class="text-center align-middle">
+                        <td class="text-center align-middle informacionCantidad">
                             <div class="input-number-container d-inline-flex align-items-center">
                                 <button class="btn-minus">−</button>
                                 <input type="number" id="cantidad" value="1" min="1" />
                                 <button class="btn-plus">+</button>
                             </div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="red"
-                                class="bi bi-trash mt-2" viewBox="0 0 16 16">
+                                class="bi bi-trash mt-2 eliminar" viewBox="0 0 16 16">
                                 <path
                                     d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z" />
                                 <path
                                     d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z" />
                             </svg>
                         </td>
-                        <td class="text-center align-middle">21.90€</td>
+                        <td class="text-center align-middle precioTotalLibro"></td>
                     </tr>
                 </tbody>
             </table>
-            <a class="seguirComprando" href="about.html">Seguir comprando</a>
+            <a class="seguirComprando" href="search.html">Seguir comprando</a>
         </div>
         
 
@@ -73,7 +72,7 @@
 
             <div class="pedido_content_total">
                 <h3>Total</h3>
-                <p>21.90€</p>
+                <p class="precioTotalLibros"></p>
 
             </div>
             <button>Comprar</button>
