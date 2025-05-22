@@ -23,7 +23,7 @@ Desarrollado por **José Daniel Cuadrado Vorobiev**
 ## Video de navagelidad y funcionalidades
 
 ### Google
- [![Ver video](https://img.youtube.com/vi/h7EnW9oR1xo/0.jpg)](https://youtu.be/h7EnW9oR1xo)
+ ▶️ [Ver video en YouTube](https://youtu.be/h7EnW9oR1xo)
 
 ### Firefox
 [![Ver video](https://img.youtube.com/vi/TYyq96M7wv8/0.jpg)](https://youtu.be/TYyq96M7wv8)
