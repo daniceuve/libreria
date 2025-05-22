@@ -44,7 +44,7 @@ function init() {
               e.preventDefault();
               const query = inputHeader.value.trim();
               if (query.length > 0) {
-                const url = new URL(window.location.origin + "/pages/search.html");
+                const url = new URL('pages/search.html', window.location.href);
                 url.searchParams.set("q", query);
                 window.location.href = url.toString();
               }
