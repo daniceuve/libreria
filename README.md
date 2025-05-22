@@ -19,3 +19,11 @@ Desarrollado por **José Daniel Cuadrado Vorobiev**
  ## Informe de Lighthouse
  
 ![imagen](https://github.com/user-attachments/assets/cfca1b0e-4f85-4263-b76f-0ccb291503e7)
+
+## Video de navagelidad y funcionalidades
+
+### Google
+ [![Haz clic para ver el video](https://img.youtube.com/vi/h7EnW9oR1xo/0.jpg)](https://youtu.be/h7EnW9oR1xo)
+
+### Firefox
+[![Haz clic para ver el video](https://img.youtube.com/vi/TYyq96M7wv8/0.jpg)](https://youtu.be/TYyq96M7wv8)
