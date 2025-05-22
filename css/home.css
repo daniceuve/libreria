@@ -240,22 +240,6 @@
         }
     }
     text-align: right;
-    button {
-        padding: 15px 80px;
-        background-color: var(--button-color);
-        color: white;
-        border: none;
-        cursor: pointer;
-        max-width: 300px;
-        margin: 0 0 40px;
-        border-top-left-radius: 28px;
-        border-bottom-left-radius: 28px;
-    }
-
-    button:hover {
-        background-color: #666;
-    }
-
 }
 
 /* Seccion de preguntas frecuentes */
