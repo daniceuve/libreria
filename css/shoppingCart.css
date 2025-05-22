@@ -1,0 +1,286 @@
+/* Archivo: styles.css */
+
+/* Variables CSS */
+:root {
+  --fondo-claro: #fffafa;
+  --fondo-oscuro: #2a2a2a;
+  --primary-color: #c8e6f0;
+  --secondary-color: #555;
+  --bg-color: #fffafa;
+  --text-color: #333333;
+  --button-color: #333333;
+  --spacing: 1rem;
+  --hover-color: #d9eef4;
+  --bg-color-anuncio: rgba(228, 246, 255, 0.43);
+}
+
+/* Carrito */
+.carrito {
+  .tituloSeccion {
+    text-align: left;
+    margin-left: 150px;
+    .linea {
+      width: 10%;
+      bottom: -10px;
+      left: 4%;
+    }
+  }
+
+  #tablaContenido {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+
+  .table-bg,
+  .table-bg th,
+  .table-bg td,
+  .table-bg tr {
+    background-color: var(--fondo-claro) !important;
+  }
+
+  .seguirComprando {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: transform 0.5s ease;
+    &:hover,
+    &:focus {
+      transform: scale(1.2);
+    }
+  }
+
+
+  .input-number-container {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    width: fit-content;
+    background-color: var(--fondo-claro);
+  }
+  
+  .input-number-container input[type="number"] {
+    width: 60px;
+    text-align: center;
+    border: none;
+    outline: none;
+    appearance: textfield;
+    background-color: var(--fondo-claro);
+  }
+  
+  .input-number-container button {
+    background-color: transparent;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #333;
+    transition: background-color 0.2s;
+  }
+  
+  .input-number-container button:hover {
+    background-color: #e5bcbc;
+  }
+  
+  /* Opcional: ocultar las flechas en Firefox */
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+
+
+}
+
+/* Pedido */
+.pedido {
+  position: relative;
+  padding: 2rem;
+
+  .tituloSeccion {
+    z-index: 2;
+    text-align: right;
+    margin-right: 150px;
+    .linea {
+      width: 25%;
+      bottom: -10px;
+      right: 4%;
+    }
+  }
+
+  .pedido_content {
+    position: relative;
+    z-index: 2;
+    margin-top: 1rem;
+    margin-right: 150px;
+    text-align: right;
+
+    .pedido_content_total {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 300px;
+      margin-bottom: 1.5rem;
+
+      h3,
+      p {
+        margin: 0;
+        font-family: "Baloo 2", sans-serif;
+        font-weight: bold;
+        font-size: 1.5em;
+      }
+    }
+
+    button {
+      background-color: var(--primary-color);
+      color: var(--text-color);
+      font-weight: bold;
+      border: 2px solid var(--text-color);
+      width: 300px;
+      margin-right: 75px;
+      transition:background-color 0.3s ease;
+      &:hover,
+      &:focus {
+        background-color: var(--hover-color);
+      }
+    }
+  }
+
+  .circuloFondo {
+    position: absolute;
+    top: -45px;
+    right: 20%;
+    width: 600px;
+    height: 400px;
+    background-color: rgba(255, 245, 245, 1);
+    border-radius: 50%;
+    transform: translateX(45%);
+    z-index: -1;
+  }
+}
+
+/* Seccion de las recomendaciones */
+.otrosLibros {
+  margin-bottom: 150px;
+  z-index: 2;
+  .tituloSeccion {
+    text-align: left;
+    margin-left: 150px;
+    .linea {
+      width: 40%;
+      bottom: -10px;
+      left: 4%;
+    }
+  }
+
+  .d-flex {
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(180deg)
+      brightness(100%) contrast(100%);
+  }
+
+  .book {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 10px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    img {
+      width: 180px;
+      height: 250px;
+      border-radius: 8px;
+    }
+    h3 {
+      font-size: 1.1em;
+      margin: 10px 0;
+    }
+    .precio {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #333;
+    }
+    &:hover,
+    &:focus {
+      background-color: rgb(255, 255, 255);
+      transform: scale(1.1);
+    }
+  }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    .header_logo {
+      padding-left: 0;
+      margin-bottom: 10px;
+    }
+    .header__nav {
+      padding: 0;
+      margin-top: 10px;
+      .header__nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+        a {
+          padding: 10px 0;
+        }
+      }
+      .input_Search {
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    .header_logo {
+      padding-left: 0;
+      margin-bottom: 10px;
+    }
+    .header__nav {
+      padding: 0;
+      margin-top: 10px;
+      .header__nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+        a {
+          padding: 10px 0;
+        }
+      }
+      .input_Search {
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+/*
+// Modo oscuro
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--fondo-oscuro);
+        color: #FFFAFA;
+    }
+    .background-rectangle2 {
+        background-color: rgba(40, 40, 40, 1);
+    }
+    .background-rectangle{
+        background-color: rgba(30, 30, 40, 1);
+    }
+}
+*/

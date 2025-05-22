@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Libreria Manolita</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/stylesGlobal.css" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <script src="../js/mainGlobal.js" defer></script>
+    <script src="../js/home.js" defer></script>
+</head>
+
+<body>
+    <div id="componentHeader"></div>
+
+    <main class="main">
+        <section class="hero" id="inicio">
+            <div class="hero_content">
+                <h1>Descubre tu próximo libro favorito</h1>
+                <button id="heroButton">Explorar</button>
+                <canvas id="circleCanvas"></canvas>
+            </div>
+        </section>
+
+        <section class="bestSellers">
+            <div class="anuncio">
+                <h4>
+                    Descubre nuestra oferta especial en eBooks: ¡20% de descuento en tu
+                    primera compra!
+                </h4>
+            </div>
+            <div class="tituloSeccion">
+                <h2>Best Sellers</h2>
+                <hr class="linea" />
+            </div>
+            <div class="bestSellers_books">
+                <div class="bestSellers_book">
+                    <a href="bookFile.html"><img
+                            src="../assets/imgs/paginaPrincipal/bestSellers/bestSeller_1_small.png" alt="Libro 1"
+                            loading="lazy" /></a>
+                    <div class="details">
+                        <h3>El Clan (Inspectora Elena Blanco 5)</h3>
+                        <p>Carmen Mola</p>
+                        <div class="precioBoton">
+                            <p class="precio">21.90€</p>
+                            <button class="botonAñadir">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bestSellers_book">
+                    <a href="bookFile.html"><img
+                            src="../assets/imgs/paginaPrincipal/bestSellers/bestSeller_2_small.png" alt="Libro 2"
+                            loading="lazy" /></a>
+                    <div class="details">
+                        <h3>Quedará el amor</h3>
+                        <p>Allice Kellen</p>
+                        <div class="precioBoton">
+                            <p class="precio">19.90€</p>
+                            <button class="botonAñadir">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bestSellers_book">
+                    <a href="bookFile.html"><img
+                            src="../assets/imgs/paginaPrincipal/bestSellers/bestSeller_3_small.png" alt="Libro 3"
+                            loading="lazy" /></a>
+                    <div class="details">
+                        <h3>El hijo del reich</h3>
+                        <p>Rafael Tarradas Bultó</p>
+                        <div class="precioBoton">
+                            <p class="precio">22.90€</p>
+                            <button class="botonAñadir">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bestSellers_book">
+                    <a href="bookFile.html"><img
+                            src="../assets/imgs/paginaPrincipal/bestSellers/bestSeller_4_small.png" alt="Libro 4"
+                            loading="lazy" /></a>
+                    <div class="details">
+                        <h3>Los siguientes</h3>
+                        <p>Pedro Simón</p>
+                        <div class="precioBoton">
+                            <p class="precio">21.90€</p>
+                            <button class="botonAñadir">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bestSellers_book">
+                    <a href="bookFile.html"><img
+                            src="../assets/imgs/paginaPrincipal/bestSellers/bestSeller_5_small.png" alt="Libro 5"
+                            loading="lazy" /></a>
+                    <div class="details">
+                        <h3>Cuando la tormenta pase</h3>
+                        <p>Manel Loureiro</p>
+                        <div class="precioBoton">
+                            <p class="precio">22.90€</p>
+                            <button class="botonAñadir">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bestSellers_book">
+                    <a href="bookFile.html"><img
+                            src="../assets/imgs/paginaPrincipal/bestSellers/bestSeller_6_small.png" alt="Libro 6"
+                            loading="lazy" /></a>
+                    <div class="details">
+                        <h3>Las Hijas de la Criada</h3>
+                        <p>Sonsoles Ónega</p>
+                        <div class="precioBoton">
+                            <p class="precio">22.90€</p>
+                            <button class="botonAñadir">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bestSellers_book">
+                    <a href="bookFile.html"><img
+                            src="../assets/imgs/paginaPrincipal/bestSellers/bestSeller_2_small.png" alt="Libro 7"
+                            loading="lazy" /></a>
+                    <div class="details">
+                        <h3>Quedará el amor</h3>
+                        <p>Allice Kellen</p>
+                        <div class="precioBoton">
+                            <p class="precio">19.90€</p>
+                            <button class="botonAñadir">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bestSellers_book">
+                    <a href="bookFile.html"><img
+                            src="../assets/imgs/paginaPrincipal/bestSellers/bestSeller_3_small.png" alt="Libro 8"
+                            loading="lazy" /></a>
+                    <div class="details">
+                        <h3>Quedará el amor</h3>
+                        <p>Allice Kellen</p>
+                        <div class="precioBoton">
+                            <p class="precio">19.90€</p>
+                            <button class="botonAñadir">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="categorias">
+            <div class="anuncio">
+                <h4>
+                    ¡No te pierdas la charla exclusiva con Isabel Allende este sábado en
+                    nuestra librería!
+                </h4>
+            </div>
+            <div class="tituloSeccion">
+                <h2>Categorias Destacadas</h2>
+                <hr class="linea" />
+            </div>
+            <div class="categorias_Destacadas">
+                <div class="categoria_Destacada">
+                    <a href="search.html?categoria=Contemporaneo">
+                        <img src="../assets/imgs/paginaPrincipal/categorias/contemporaneo.jpg" alt="Categoría 1"
+                            loading="lazy" />
+                        <h3>Contemporaneo</h3>
+                    </a>
+                </div>
+                <div class="categoria_Destacada">
+                    <a href="search.html?categoria=Juvenil">
+                        <img src="../assets/imgs/paginaPrincipal/categorias/juvenil.png" alt="Categoría 2"
+                            loading="lazy" />
+                        <h3>Juvenil</h3>
+                    </a>
+                </div>
+                <div class="categoria_Destacada">
+                    <a href="search.html?categoria=Infantil">
+                        <img src="../assets/imgs/paginaPrincipal/categorias/infantil.png" alt="Categoría 3"
+                            loading="lazy" />
+                        <h3>Infantil</h3>
+                    </a>
+                </div>
+                <div class="categoria_Destacada">
+                    <a href="search.html?categoria=Autoyuda">
+                        <img src="../assets/imgs/paginaPrincipal/categorias/autoAyuda.png" alt="Categoría 4"
+                            loading="lazy" />
+                        <h3>Autoyuda</h3>
+                    </a>
+                </div>
+                <div class="categoria_Destacada">
+                    <a href="search.html?categoria=Ciencias">
+                        <img src="../assets/imgs/paginaPrincipal/categorias/ciencias.png" alt="Categoría 5"
+                            loading="lazy" />
+                        <h3>Ciencias</h3>
+                    </a>
+                </div>
+            </div>
+            <button>Explorar</button>
+        </section>
+
+        <section class="faq">
+            <div class="tituloSeccion">
+                <h2>Preguntas Frecuentes</h2>
+                <hr class="linea" />
+            </div>
+
+            <div class="container mt-5">
+                <div class="row w-100">
+                    <!-- Primera columna con 3 acordeones -->
+                    <div class="col-md-6">
+                        <div class="accordion accordion-flush" id="accordionFlushExample1">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        ¿Cual es la política de devolución?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample1">
+                                    <div class="accordion-body">
+                                        En nuestra librería, ofrecemos una política de devolución
+                                        de 30 días para productos en su estado original. Si no
+                                        estás completamente satisfecho con tu compra, puedes
+                                        devolver los libros sin problema. Los gastos de envío para
+                                        devoluciones son a cargo del cliente, salvo en casos de
+                                        productos defectuosos o error en el envío.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        ¿Hacen envíos a domicilio?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample1">
+                                    <div class="accordion-body">
+                                        ¡Sí! Realizamos envíos a domicilio dentro de todo el país.
+                                        Los envíos son procesados en un plazo de 1 a 3 días
+                                        hábiles, y recibirás un número de seguimiento para poder
+                                        rastrear tu pedido. Las tarifas de envío varían según el
+                                        destino y el tamaño del pedido.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                        ¿Puedo reservar un libro no disponible?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample1">
+                                    <div class="accordion-body">
+                                        Claro, puedes reservar un libro que no está disponible en
+                                        stock. Simplemente, contacta con nuestro equipo y te
+                                        añadiremos a nuestra lista de espera. Te notificaremos tan
+                                        pronto como el libro esté disponible para su compra.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Segunda columna con 3 acordeones -->
+                    <div class="col-md-6">
+                        <div class="accordion accordion-flush" id="accordionFlushExample2">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                        aria-controls="flush-collapseFour">
+                                        ¿Ofrecen descuentos para estudiantes?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample2">
+                                    <div class="accordion-body">
+                                        Sí, ofrecemos un descuento especial para estudiantes. Solo
+                                        tienes que registrarte en nuestro sitio web con tu
+                                        identificación estudiantil y disfrutarás de un descuento
+                                        del 10% en todos los libros. También puedes recibir
+                                        descuentos adicionales en fechas especiales, como el
+                                        inicio de curso.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                        aria-controls="flush-collapseFive">
+                                        ¿Cómo puedo unirme al club de lectura?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample2">
+                                    <div class="accordion-body">
+                                        Unirse a nuestro club de lectura es muy fácil. Solo tienes
+                                        que suscribirte a nuestra newsletter en la página de
+                                        inicio de nuestro sitio web y recibirás las
+                                        actualizaciones sobre los próximos libros y actividades
+                                        del club. Además, tendrás acceso a promociones exclusivas
+                                        para miembros.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingSix">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseSix" aria-expanded="false"
+                                        aria-controls="flush-collapseSix">
+                                        ¿Ofrecen servicios de envío internacional?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseSix" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample2">
+                                    <div class="accordion-body">
+                                        ¡Sí! Realizamos envíos internacionales a varios países. Si
+                                        deseas que te enviemos un libro fuera del país,
+                                        simplemente selecciona tu ubicación al realizar el pedido
+                                        y te informaremos sobre las tarifas y tiempos de entrega.
+                                        El envío internacional puede tardar entre 5 y 15 días
+                                        hábiles, dependiendo del destino.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="anuncio">
+                <h4>
+                    ¿Tienes una pregunta? Visítanos en la librería o contáctanos a
+                    través de nuestro sitio web.
+                </h4>
+            </div>
+        </section>
+    </main>
+    <div id="componentFooter"></div>
+    
+    <div class="background-rectangle"></div>
+    <div class="background-rectangle2"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

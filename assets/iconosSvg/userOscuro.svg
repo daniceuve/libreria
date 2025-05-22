@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="32"
+   height="32"
+   viewBox="0 0 32 32"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="userOscuro.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="26.71875"
+     inkscape:cx="16"
+     inkscape:cy="16"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g18">
+      <g
+         data-name="Layer 2"
+         id="g16">
+        <path
+           d="M 16,29 A 13,13 0 1 1 29,16 13,13 0 0 1 16,29 Z M 16,5 A 11,11 0 1 0 27,16 11,11 0 0 0 16,5 Z"
+           id="path14"
+           style="fill:#333333" />
+        <path
+           d="m 16,17 a 5,5 0 1 1 5,-5 5,5 0 0 1 -5,5 z m 0,-8 a 3,3 0 1 0 3,3 3,3 0 0 0 -3,-3 z"
+           id="path15"
+           style="fill:#333333" />
+        <path
+           d="M 25.55,24 A 1,1 0 0 1 24.81,23.68 11.35,11.35 0 0 0 16.46,20 H 15.54 A 11.27,11.27 0 0 0 7.69,23.16 1,1 0 0 1 6.31,21.72 13.24,13.24 0 0 1 15.54,18 h 0.92 a 13.39,13.39 0 0 1 9.82,4.32 1,1 0 0 1 -0.73,1.68 z"
+           id="path16"
+           style="fill:#333333" />
+      </g>
+      <g
+         id="g17">
+        <rect
+           class="cls-1"
+           height="32"
+           width="32"
+           id="rect16"
+           x="0"
+           y="0"
+           style="fill:none" />
+      </g>
+    </g>
+  </g>
+</svg>

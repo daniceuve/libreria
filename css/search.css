@@ -1,0 +1,416 @@
+/* Archivo: styles.css */
+
+/* Variables CSS */
+:root {
+    --fondo-claro: #FFFAFA;
+    --fondo-oscuro: #2A2A2A;
+    --primary-color: #C8E6F0;
+    --secondary-color: #555;
+    --bg-color: #FFFAFA;
+    --text-color: #333333;
+    --button-color: #333333;
+    --spacing: 1rem;
+    --hover-color: #d9eef4;
+    --bg-color-anuncio: rgba(228, 246, 255, 0.43);
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    h1, h2 {
+        font-family: 'Baloo Bhai', sans-serif;
+    }
+    h3, h4{
+        font-family: 'Baloo 2', sans-serif;
+    }
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+
+h1, h2, h3, h4, h5, h6{
+    font-family: inherit;
+    font-size: inherit;
+    margin: 0;
+    padding: 0;
+}
+button {
+    font-family: inherit;
+    font-size: inherit;
+    background-color: var(--button-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 15px 30px;
+}
+
+/* Encabezado */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    padding: 15px 0;
+    background-color: var(--primary-color);
+    .header_logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 40px;
+
+        h3{
+            padding-left: 30px;
+            font-weight: bold;
+        }
+        svg {
+            transition: transform 0.3s ease-in-out;
+            animation: botear 1s ease-in-out 3;
+
+            &:hover {
+                transform: scale(1.2) rotate(15deg);
+            }
+        }
+        a {
+            text-decoration: none;
+            color: var(--text-color);
+            &:hover {
+                color: #555;
+            }
+        }
+    }
+
+    .header__nav{
+        display: flex;
+        align-items: center;
+        padding: 10px;
+
+        .header__nav-list{
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            a, input{
+                display: inline-block;
+                text-decoration: none;
+                color: var(--text-color);
+                padding: 10px 30px;
+            }
+            a { 
+                &:hover{
+                    background-color: var(--hover-color);
+                    border-radius: 28px;
+                }
+            }
+            .carrito {
+                animation: moverCarrito 1s ease-in-out infinite;
+            }
+        }
+        .input_Search {
+            font-size: 1em;
+            border-radius: 28px;
+            border: none;
+            width: 170px;
+        }
+    }
+
+}
+
+
+/* Sección grid general */
+.gripGeneral {
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+        "busqueda busqueda"
+        "filtros resultadoLibros";
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+/* Sección de busqueda */
+.busqueda {
+    grid-area: busqueda;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+    
+    .opciones {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+    
+        input[type="radio"] {
+            display: none;
+        }
+    
+        label {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: background-color 0.3s;
+        }
+    
+        input[type="radio"]:checked + label {
+            background-color: #2980b9;
+            color: #fff;
+        }
+    }
+}
+
+/* Sección de filtros */
+.filtros {
+    grid-area: filtros;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    #priceText {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #333;
+    }
+}
+
+/* Sección de resultados de libros */
+.resultadoLibros {
+    grid-area: resultadoLibros;
+    margin-bottom: 50px;
+
+    .resultadoLibrosEncontrados {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        justify-items: center;
+
+        .resultadoLibrosEncontrado {
+            display: flex;
+            border: 2px solid #000;
+            border-radius: 8px;
+            padding: 15px;
+            align-items: center;
+            justify-content: flex-start;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            
+            width: 310px;
+            height: 220px;
+            
+            img {
+                max-width: 135px;
+                max-height: 190px;
+                object-fit: contain;
+                margin-right: 15px;
+            }
+            
+            .details {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: left;
+
+                h3, p {
+                    margin-bottom: 10px;
+                }
+
+                .precioBoton {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 100%;
+
+                    .precio {
+                        color: #F57F7F;
+                        margin-bottom: 5px;
+                    }
+
+                    button {
+                        margin-top: 10px;
+                        padding: 8px 20px;
+                        background-color: var(--button-color);
+                        color: white;
+                        border: none;
+                        cursor: pointer;
+                        border-radius: 8px;
+                        text-align: center;
+                        display: block;
+                        width: 100%;
+                        margin-top: 0;
+                        font-size: 80%;
+                        white-space: nowrap;
+                    }
+
+                    button:hover {
+                        background-color: #2980b9;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+/* Pie de página */
+.footer {
+    z-index: 2;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+
+    .footer_contactos, .footer_socials{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        flex: 1 1 200px;
+
+        .footer_contacto, .footer_social{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            padding: 10px 0;
+            a {
+                text-decoration: none;
+                color: inherit;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    .footer_loco {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 20px;
+    }
+    
+}
+
+.background-rectangle {
+    position: fixed;
+    transform: rotate(65deg) scaleY(5.0);
+    top: 10%;
+    left: 67%;
+    width: 100vh;
+    height: 100vh;
+    background-color: rgba(245, 246, 252, 1);
+    z-index: -2;
+}
+
+.background-rectangle2 {
+    position: fixed;
+    transform: rotate(-70deg) scaleY(2.0);
+    top: 30%;
+    left: 10%;
+    width: 100vh;
+    height: 100vh;
+    background-color: rgba(255, 245, 245, 1);
+    z-index: -1;
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        .header_logo {
+            padding-left: 0;
+            margin-bottom: 10px;
+        }
+        .header__nav {
+            padding: 0;
+            margin-top: 10px;
+            .header__nav-list {
+                flex-direction: column;
+                align-items: flex-start;
+                a {
+                    padding: 10px 0;
+                }
+            }
+            .input_Search {
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+    }
+    .resultadoLibrosEncontrados {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        .header_logo {
+            padding-left: 0;
+            margin-bottom: 10px;
+        }
+        .header__nav {
+            padding: 0;
+            margin-top: 10px;
+            .header__nav-list {
+                flex-direction: column;
+                align-items: flex-start;
+                a {
+                    padding: 10px 0;
+                }
+            }
+            .input_Search {
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+    }
+    .resultadoLibrosEncontrados {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+/*
+// Modo oscuro
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--fondo-oscuro);
+        color: #FFFAFA;
+    }
+    .background-rectangle2 {
+        background-color: rgba(40, 40, 40, 1);
+    }
+    .background-rectangle{
+        background-color: rgba(30, 30, 40, 1);
+    }
+}
+*/

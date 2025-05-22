@@ -1,0 +1,384 @@
+/* Variables CSS */
+:root {
+    --fondo-claro: #FFFAFA;
+    --fondo-oscuro: #2A2A2A;
+    --primary-color: #C8E6F0;
+    --secondary-color: #555;
+    --bg-color: #FFFAFA;
+    --text-color: #333333;
+    --button-color: #333333;
+    --spacing: 1rem;
+    --hover-color: #d9eef4;
+    --bg-color-anuncio: rgba(228, 246, 255, 0.43);
+}
+
+
+/* Sección hero */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    position: relative;
+    min-height: 700px;
+    overflow: hidden;
+    background-image: url("../assets/imgs/paginaPrincipal/hero/hero.png");
+    background-size: cover;
+    background-position: center;
+    
+    .hero_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        flex: 1;
+        padding: 20px;
+        text-align: center;
+        height: auto;
+        max-width: 55%;
+        
+        h1 {
+            margin-left: 70px;
+            font-size: 9em;
+            margin-bottom: 10px;
+            text-align: left;
+            position: relative;
+            line-height: 0.9;
+        }
+
+        #circleCanvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        button {
+            padding: 15px 30px;
+            background-color: var(--button-color);
+            color: white;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            max-width: 300px;
+            align-self: center;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        button:hover {
+            background-color: #666;
+        }
+
+    }
+
+}
+
+
+/* Seccion de best sellers */
+
+.bestSellers {
+    z-index: 2;
+
+    .tituloSeccion {
+        text-align: right;
+        margin-right: 150px;
+        .linea {
+            width: 30%;
+            bottom: -10px;
+            right: 2%;
+            
+            animation: moveLine 3s linear infinite, changeColor 5s infinite;
+
+        }
+    }
+
+    .bestSellers_books {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        margin: 20px;
+        justify-items: center;
+
+        .bestSellers_book {
+            display: flex;
+            border: 2px solid #000;
+            border-radius: 8px;
+            padding: 15px;
+            align-items: center;
+            justify-content: flex-start;
+            background-color: rgb(255, 251, 251);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 310px;
+            height: 220px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            opacity: 0;
+            animation: fadeInScroll both;
+            animation-timeline: view();
+            animation-range: entry 20% cover 50%;
+            
+            img {
+                margin-right: 15px;
+                border-radius: 10px;
+                animation: borderPulse 3s infinite;
+            }
+
+            button {
+                margin-top: 10px;
+                padding: 8px 20px;
+                background-color: var(--button-color);
+                color: white;
+                border: none;
+                cursor: pointer;
+                border-radius: 8px;
+                text-align: center;
+                display: block;
+                width: 100%;
+                font-size: 80%;
+                white-space: nowrap;
+                animation: pulse 2s infinite;
+            
+                &:hover {
+                    background-color: #2980b9;
+                }
+            }
+
+            &:hover,
+            &:focus {
+                background-color:rgb(255, 255, 255);
+                transform: scale(1.1);
+            }
+            
+            
+        }
+    }
+}
+
+
+
+/* Animaciones */
+
+@keyframes moveLine {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(30px); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes changeColor {
+    0% { border-color: red; }
+    50% { border-color: blue; }
+    100% { border-color: red; }
+}
+
+@keyframes borderPulse {
+    0% { box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); }
+    50% { box-shadow: 0 0 20px rgba(0, 0, 0, 0.24); }
+    100% { box-shadow: 0 0 5px rgba(0, 0, 0, 0.12); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes fadeInScroll {
+    from { opacity: 0;}
+    to { opacity: 1; }
+}
+
+
+/* Sección de categorías */
+
+.categorias {
+    z-index: 2;
+    .tituloSeccion {
+        text-align: left;
+        margin-left: 150px;
+        .linea {
+            width: 42%;
+            bottom: -10px;
+            left: 6%;
+        }
+    }
+
+    .categorias_Destacadas {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+        margin: 20px;
+        justify-items: center;
+        position: relative;
+        .categoria_Destacada {
+            a {
+                text-decoration: none;
+                color: inherit;
+                display: flex;
+                flex-direction: column;
+                padding: 30px;
+                align-items: center;
+
+                img {
+                    width: 140px;
+                    height: 135px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    margin-right: 15px;
+                }
+
+                h3 {
+                    margin-top: 15px;
+                    transition: color 0.3s ease, transform 0.3s ease;
+                }
+                
+            }
+            a:hover {
+                color: #2980b9;
+                transform: scale(1.1);
+            }
+        }
+    }
+    text-align: right;
+    button {
+        padding: 15px 80px;
+        background-color: var(--button-color);
+        color: white;
+        border: none;
+        cursor: pointer;
+        max-width: 300px;
+        margin: 0 0 40px;
+        border-top-left-radius: 28px;
+        border-bottom-left-radius: 28px;
+    }
+
+    button:hover {
+        background-color: #666;
+    }
+
+}
+
+/* Seccion de preguntas frecuentes */
+.faq {
+    z-index: 2;
+    margin-bottom: 100px;
+    .anuncio{
+        margin: 60px auto 0; 
+    }
+
+    .tituloSeccion {
+        text-align: right;
+        margin-right: 150px;
+        .linea {
+            width: 42%;
+            bottom: -10px;
+            right: 4%;
+        }
+    }
+    .accordion-button {
+        color: #333;
+        background-color: #D9D9D9;
+        border-color: #D9D9D9;
+      }
+      
+      .accordion-button:not(.collapsed) {
+        color: #333;
+        background-color: #FFF5F5;
+        border-color: #E1D0D0;
+      }
+
+}
+
+
+.anuncio{
+    background-color: var(--bg-color-anuncio);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 0;
+    padding: 10px;
+    width: 85%;
+    border-radius: 10px;
+    max-height: 40px;
+    height: auto;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        .header_logo {
+            padding-left: 0;
+            margin-bottom: 10px;
+        }
+        .header__nav {
+            padding: 0;
+            margin-top: 10px;
+            .header__nav-list {
+                flex-direction: column;
+                align-items: flex-start;
+                a {
+                    padding: 10px 0;
+                }
+            }
+            .input_Search {
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+    }
+    .bestSellers_books {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .categorias_Destacadas {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        .header_logo {
+            padding-left: 0;
+            margin-bottom: 10px;
+        }
+        .header__nav {
+            padding: 0;
+            margin-top: 10px;
+            .header__nav-list {
+                flex-direction: column;
+                align-items: flex-start;
+                a {
+                    padding: 10px 0;
+                }
+            }
+            .input_Search {
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+    }
+    .bestSellers_books {
+        grid-template-columns: 1fr;
+    }
+    .categorias_Destacadas {
+        grid-template-columns: 1fr;
+    }
+}
+/*
+// Modo oscuro
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--fondo-oscuro);
+        color: #FFFAFA;
+    }
+    .background-rectangle2 {
+        background-color: rgba(40, 40, 40, 1);
+    }
+    .background-rectangle{
+        background-color: rgba(30, 30, 40, 1);
+    }
+}
+*/
