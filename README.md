@@ -14,3 +14,8 @@ La página incluye secciones como exploración de libros, carrito de compras int
 ## Autor
 
 Desarrollado por **José Daniel Cuadrado Vorobiev**
+
+
+ ## Informe de Lighthouse
+ 
+![imagen](https://github.com/user-attachments/assets/cfca1b0e-4f85-4263-b76f-0ccb291503e7)
