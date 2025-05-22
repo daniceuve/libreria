@@ -26,4 +26,4 @@ Desarrollado por **José Daniel Cuadrado Vorobiev**
  ▶️ [Ver video en YouTube](https://youtu.be/h7EnW9oR1xo)
 
 ### Firefox
-[![Ver video](https://img.youtube.com/vi/TYyq96M7wv8/0.jpg)](https://youtu.be/TYyq96M7wv8)
+▶️ [Ver video en YouTube](https://youtu.be/TYyq96M7wv8)
