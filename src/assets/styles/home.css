@@ -2,7 +2,7 @@
 .hero {
   min-height: 700px;
   overflow: hidden;
-  background-image: url("../assets/imgs/paginaPrincipal/hero/hero.png");
+  background-image: url("../imgs/paginaPrincipal/hero/hero.png");
   background-size: cover;
   background-position: center;
 }

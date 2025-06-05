@@ -44,7 +44,7 @@ body {
 
 /* Header */
 
-.header_logo svg {
+.header_logo img {
   transition: transform 0.3s ease-in-out;
   animation: botear 1s ease-in-out 3;
 
@@ -85,11 +85,6 @@ body {
 
 /* Footer */
 .footer_contacto, .footer_social{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  padding: 10px 0;
   a {
       text-decoration: none;
       color: inherit;
