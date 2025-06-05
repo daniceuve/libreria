@@ -58,24 +58,13 @@ button {
 
 /* Encabezado */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
     z-index: 10;
-    padding: 15px 0;
-    background-color: var(--primary-color);
     .header_logo {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding-left: 40px;
-
         h3{
             padding-left: 30px;
             font-weight: bold;
         }
-        svg {
+        img {
             transition: transform 0.3s ease-in-out;
             animation: botear 1s ease-in-out 3;
 

@@ -1,5 +1,5 @@
 import Hero from "../components/ui/home/Hero";
-import "../styles/home.css";
+import "../assets/styles/home.css";
 
 const Home = () => {
     return (

@@ -5,7 +5,6 @@ import Search from './pages/Search';
 import BookFile from './pages/BookFile';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
-import "./styles/globalStyles.css";
 
 function App() {
   return (
