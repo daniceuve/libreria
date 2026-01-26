@@ -18,13 +18,17 @@
 </head>
 
 <body>
+    <body class="d-flex flex-column min-vh-100">
     <div id="componentHeader"></div>
 
-    <main class="main">
-        <h1>Mochilas de Porteo Ergonómicas</h1>
-        <p>Más comodidad. Menos coche. Oferta especial en Almería.</p>
-        <button>Ver Oferta</button>
+    <main class="flex-fill d-flex justify-content-center align-items-center w-100">
+        <div class="text-center px-3">
+            <h1 class="mb-3">Mochilas de Porteo Ergonómicas</h1>
+            <p class="mb-4">Más comodidad. Menos coche. Oferta especial en Almería.</p>
+            <button class="btn btn-primary btn-lg">Ver Oferta</button>
+        </div>
     </main>
+
     <div id="componentFooter"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
