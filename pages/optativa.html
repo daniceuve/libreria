@@ -13,7 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../css/stylesGlobal.css" />
-    <link rel="stylesheet" href="../css/home.css" />
     <script src="../js/mainGlobal.js" defer></script>
 </head>
 
@@ -21,12 +20,17 @@
     <body class="d-flex flex-column min-vh-100">
     <div id="componentHeader"></div>
 
-    <main class="flex-fill d-flex justify-content-center align-items-center w-100">
-        <div class="text-center px-3">
-            <h1 class="mb-3">Mochilas de Porteo Ergonómicas</h1>
-            <p class="mb-4">Más comodidad. Menos coche. Oferta especial en Almería.</p>
-            <button class="btn btn-primary btn-lg">Ver Oferta</button>
+    <main class="flex-fill d-flex flex-column justify-content-center align-items-center w-100 px-3">
+        <h1 class="text-center mb-3">Mochilas de Porteo Ergonómicas</h1>
+        <p class="text-center mb-4">Más comodidad. Menos coche. Oferta especial en Almería.</p>
+
+        <div class="ratio ratio-16x9 mb-4" style="max-width: 800px; width: 100%;">
+            <iframe src="https://www.youtube.com/embed/d8jv9aTRAIE" title="Video promocional"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </div>
+
+        <button class="btn btn-primary btn-lg">Ver Oferta</button>
     </main>
 
     <div id="componentFooter"></div>
