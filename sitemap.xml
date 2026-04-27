@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Página principal (redirección) -->
+  <url>
+    <loc>https://daniceuve.github.io/libreria/</loc>
+    <lastmod>2026-01-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- index.html -->
+  <url>
+    <loc>https://daniceuve.github.io/libreria/index.html</loc>
+    <lastmod>2026-01-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Home (página principal de la librería) -->
+  <url>
+    <loc>https://daniceuve.github.io/libreria/pages/home.html</loc>
+    <lastmod>2025-05-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Sobre Nosotros -->
+  <url>
+    <loc>https://daniceuve.github.io/libreria/pages/about.html</loc>
+    <lastmod>2025-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Buscador -->
+  <url>
+    <loc>https://daniceuve.github.io/libreria/pages/search.html</loc>
+    <lastmod>2025-05-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Detalle de libro -->
+  <url>
+    <loc>https://daniceuve.github.io/libreria/pages/bookFile.html</loc>
+    <lastmod>2025-05-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Carrito de compras -->
+  <url>
+    <loc>https://daniceuve.github.io/libreria/pages/shoppingCart.html</loc>
+    <lastmod>2025-05-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>
