@@ -1,0 +1,33 @@
+# robots.txt para Librería Manolita en GitHub Pages
+# Autor: Dan Iceuve
+# Última actualización: 2026
+
+User-agent: *
+Allow: /
+
+# No indexar carpetas de imágenes
+Disallow: /assets/imgs/
+Disallow: /assets/iconosSvg/
+
+# No indexar archivos por extensión
+Disallow: /*.pdf$
+Disallow: /*.doc$
+Disallow: /*.docx$
+Disallow: /*.xls$
+Disallow: /*.xlsx$
+# NOTA: CSS y JS son necesarios para el renderizado, 
+# pero si el ejercicio lo exige estrictamente:
+# Disallow: /*.css$
+# Disallow: /*.js$
+
+# Permitir páginas HTML principales
+Allow: /index.html
+Allow: /pages/home.html
+Allow: /pages/about.html
+Allow: /pages/bookFile.html
+Allow: /pages/search.html
+Allow: /pages/shoppingCart.html
+Allow: /pages/optativa.html
+
+# Ubicación del sitemap
+Sitemap: https://daniceuve.github.io/libreria/sitemap.xml
