@@ -1,5 +1,5 @@
 # robots.txt para Librería Manolita en GitHub Pages
-# Autor: Dan Iceuve
+# Autor: Daniceuve
 # Última actualización: 2026
 
 User-agent: *
@@ -15,10 +15,8 @@ Disallow: /*.doc$
 Disallow: /*.docx$
 Disallow: /*.xls$
 Disallow: /*.xlsx$
-# NOTA: CSS y JS son necesarios para el renderizado, 
-# pero si el ejercicio lo exige estrictamente:
-# Disallow: /*.css$
-# Disallow: /*.js$
+Disallow: /*.css$
+Disallow: /*.js$
 
 # Permitir páginas HTML principales
 Allow: /index.html
